@@ -5,8 +5,25 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:配置网卡信息"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
+        Title="更改网卡信息" Height="331.115" Width="300.899" Loaded="Window_Loaded">
+    <Grid Margin="0,0,2,-21">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="104*"/>
+            <RowDefinition Height="215*"/>
+        </Grid.RowDefinitions>
+        <TextBox x:Name="txt1" HorizontalAlignment="Left" Height="25" Margin="92,51,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="189"/>
+        <TextBox x:Name="txt2" HorizontalAlignment="Left" Height="25" Margin="92,97,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="189" Grid.RowSpan="2"/>
+        <TextBox x:Name="txt3" HorizontalAlignment="Left" Height="25" Margin="92,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="189" Grid.Row="1"/>
+        <TextBox x:Name="txt4" HorizontalAlignment="Left" Height="25" Margin="92,78,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="189" Grid.Row="1"/>
+        <Button Content="更改" HorizontalAlignment="Left" Margin="92,167,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click" Grid.Row="1"/>
+        <Label Content="IP Address" HorizontalAlignment="Left" Margin="16,51,0,0" VerticalAlignment="Top"/>
+        <Label Content="Net Mask" HorizontalAlignment="Left" Margin="16,97,0,0" VerticalAlignment="Top" Grid.RowSpan="2"/>
+        <Label Content="GateWay" HorizontalAlignment="Left" Margin="16,36,0,0" VerticalAlignment="Top" Grid.Row="1"/>
+        <Label Content="DNS" HorizontalAlignment="Left" Margin="28,78,0,0" VerticalAlignment="Top" Grid.Row="1"/>
+        <ComboBox x:Name="comboxbox1" HorizontalAlignment="Left" Margin="92,14,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="comboxbox1_SelectionChanged"/>
+        <CheckBox x:Name="checkbox1" Content="DHCP" HorizontalAlignment="Left" Margin="227,20,0,0" VerticalAlignment="Top" Checked="checkbox1_Checked" Unchecked="checkbox1_Unchecked"/>
+        <Label Content="DNS2" HorizontalAlignment="Left" Margin="28,126,0,0" VerticalAlignment="Top" Grid.Row="1"/>
+        <TextBox x:Name="txt5" HorizontalAlignment="Left" Height="25" Margin="92,127,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="189" Grid.Row="1"/>
+
     </Grid>
 </Window>
